@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="images/icons/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="/index.html">
+                    <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="132" height="35"
+                        viewBox="0 0 132 35" fill="none">
+                        <path
+                            d="M21.6924 24.8265C20.706 24.2825 19.7656 23.6463 18.816 23.0469C18.1891 22.6504 17.5622 22.3001 16.8984 22.0234C16.8984 22.6043 16.8984 23.1945 16.9169 23.7754C16.9169 24.513 17.1289 25.2138 17.4516 25.8777C18.1891 27.4176 19.655 28.0077 21.1761 27.8694C22.642 27.7311 23.5362 26.9012 23.9972 25.5273C24.0064 25.4996 24.0156 25.4628 24.0249 25.4351C23.2228 25.4351 22.4392 25.2322 21.7108 24.8265H21.6924Z"
+                            fill="white" />
+                        <path
+                            d="M17.4974 2C8.94203 2 2 8.94319 2 17.5C2 26.0568 8.94203 33 17.4974 33C26.0528 33 32.9948 26.0568 32.9948 17.5C32.9948 8.94319 26.0528 2 17.4974 2ZM28.1916 23.724C27.2697 24.4432 26.2925 25.0702 25.1217 25.3192C24.8359 25.3837 24.5501 25.4114 24.2735 25.4298C23.9047 27.0065 22.9091 28.0208 21.2865 28.3897C20.0327 28.6755 18.7881 28.6294 17.5712 28.279C16.0131 27.818 15.0912 26.7299 14.7224 25.1624C14.5104 24.2864 14.5012 23.3828 14.5012 22.4884C14.5012 22.138 14.5012 21.7876 14.5012 21.428C13.0722 21.262 11.8184 21.2989 11.339 21.2805C10.6845 21.2528 9.64269 21.2805 9.64269 21.2805C9.64269 21.2805 9.67034 18.7079 9.67034 18.2745C9.67034 15.37 9.67034 12.4747 9.67034 9.5702C9.67034 9.15526 9.67034 7.0345 9.67034 7.0345H11.9659C11.9659 7.0345 11.9659 9.01695 11.9659 9.14604C11.9659 13.0003 11.9659 16.8546 11.9659 20.7088C11.9659 20.7733 11.9659 20.9854 11.9659 20.9854C11.9659 20.9854 12.6666 21.05 13.736 21.1053C13.9941 21.1237 14.2523 21.1514 14.5012 21.1791C14.5012 19.7406 14.5012 18.3022 14.5012 16.8638C14.5012 16.6517 14.5012 14.1437 14.5012 14.1437H16.8705C16.8705 14.1437 16.8705 16.5503 16.8705 17.0297C16.8705 18.5604 16.8797 20.1002 16.889 21.6309C17.6265 21.8245 18.3179 22.055 18.9264 22.304C20.0788 22.7835 21.2127 23.2998 22.3928 23.6963C23.0105 23.8992 23.6282 24.0559 24.2551 24.1297C24.2735 23.9361 24.2827 23.7424 24.2827 23.5396C24.2827 21.4004 24.2827 19.2519 24.2827 17.1127C24.2827 16.707 24.2827 14.1344 24.2827 14.1344H24.5409C24.5409 14.1344 24.5501 15.5821 24.5409 16.6609C24.5224 18.8093 24.5501 20.9578 24.5224 23.1154C24.5224 23.4566 24.504 23.807 24.4763 24.1481C25.3614 24.2403 26.2556 24.185 27.1591 23.9453C27.4633 23.8623 27.7491 23.7424 28.0349 23.6318C28.1087 23.6041 28.1824 23.5764 28.2838 23.5949C28.2562 23.6318 28.2377 23.6779 28.2009 23.7055L28.1916 23.724Z"
+                            fill="white" />
+                        <path
+                            d="M44.5353 23.0156V23.3476H42.7745V29.1843H42.378V23.3476H40.6172V23.0156H44.5261H44.5353Z"
+                            fill="white" />
+                        <path
+                            d="M47.3671 24.6087C47.6621 24.4242 48.0493 24.332 48.5103 24.332V24.747H48.3812C47.911 24.747 47.5238 24.8761 47.2104 25.1435C46.8969 25.4109 46.7402 25.8442 46.7402 26.4528V29.2098H46.3438V24.4335H46.7402V25.4201C46.86 25.0697 47.0628 24.8023 47.3671 24.6179V24.6087Z"
+                            fill="white" />
+                        <path
+                            d="M50.3257 25.5081C50.5193 25.1392 50.7959 24.8534 51.1462 24.6505C51.4966 24.4477 51.893 24.3555 52.3355 24.3555C52.8425 24.3555 53.2666 24.4753 53.617 24.7243C53.9673 24.9733 54.2162 25.2868 54.3545 25.6648V24.42H54.7509V29.1963H54.3545V27.9423C54.2162 28.3296 53.9673 28.6431 53.6077 28.8921C53.2574 29.141 52.8241 29.2701 52.3263 29.2701C51.8838 29.2701 51.4873 29.1687 51.137 28.9658C50.7867 28.763 50.5193 28.4771 50.3165 28.1083C50.1229 27.7395 50.0215 27.3061 50.0215 26.8082C50.0215 26.3103 50.1229 25.8861 50.3165 25.5173L50.3257 25.5081ZM54.0964 25.7017C53.9212 25.379 53.6907 25.1392 53.3865 24.964C53.0915 24.7888 52.7504 24.7059 52.3816 24.7059C52.0128 24.7059 51.6533 24.7888 51.3583 24.9548C51.0633 25.1208 50.8328 25.3605 50.676 25.6833C50.5101 25.9968 50.4271 26.3748 50.4271 26.8082C50.4271 27.2415 50.5101 27.6196 50.676 27.9331C50.842 28.2466 51.0725 28.4956 51.3675 28.6615C51.6625 28.8275 52.0036 28.9197 52.3816 28.9197C52.7596 28.9197 53.0822 28.8367 53.3865 28.6615C53.6907 28.4863 53.9212 28.2466 54.0964 27.9239C54.2623 27.6012 54.3545 27.2323 54.3545 26.8082C54.3545 26.384 54.2715 26.0244 54.0964 25.7017Z"
+                            fill="white" />
+                        <path
+                            d="M58.6785 28.7726L60.4394 24.4297H60.8635L58.8814 29.206H58.4665L56.4844 24.4297H56.9177L58.6785 28.7726Z"
+                            fill="white" />
+                        <path
+                            d="M66.8748 26.9532H62.7538C62.7631 27.3774 62.8553 27.7462 63.0396 28.032C63.2148 28.3271 63.4453 28.5484 63.7311 28.6959C64.0169 28.8435 64.3303 28.9172 64.6714 28.9172C65.1416 28.9172 65.5288 28.7973 65.8515 28.5668C66.1649 28.3363 66.3678 28.0228 66.4507 27.6171H66.8656C66.7734 28.1058 66.5337 28.5023 66.1465 28.7973C65.7593 29.1016 65.2707 29.2492 64.6806 29.2492C64.2381 29.2492 63.8325 29.1477 63.4822 28.9541C63.1318 28.7512 62.8553 28.4654 62.6524 28.0966C62.4496 27.7277 62.3574 27.2852 62.3574 26.7872C62.3574 26.2893 62.4588 25.8559 62.6524 25.4871C62.846 25.1183 63.1226 24.8324 63.4729 24.6388C63.8233 24.4452 64.2289 24.3438 64.6806 24.3438C65.1324 24.3438 65.538 24.4452 65.8699 24.6388C66.211 24.8324 66.4599 25.0998 66.6351 25.4226C66.8103 25.7453 66.9025 26.0957 66.9025 26.4737C66.9025 26.6858 66.9025 26.8426 66.884 26.9532H66.8748ZM66.2756 25.5517C66.1096 25.2566 65.8791 25.0445 65.5934 24.897C65.3076 24.7495 64.9941 24.6849 64.6622 24.6849C64.3303 24.6849 64.0169 24.7587 63.7311 24.897C63.4453 25.0445 63.2148 25.2566 63.0396 25.5517C62.8645 25.8467 62.7631 26.2063 62.7538 26.6213H66.4968C66.5153 26.1971 66.4415 25.8375 66.2756 25.5517Z"
+                            fill="white" />
+                        <path d="M69.3476 22.6875V29.1973H68.9512V22.6875H69.3476Z" fill="white" />
+                        <path
+                            d="M79.0077 28.0022L80.1693 29.2009H79.6715L78.7864 28.2972C78.4914 28.6476 78.1688 28.8966 77.8369 29.0533C77.4958 29.2101 77.1178 29.2931 76.6937 29.2931C76.2973 29.2931 75.9469 29.2193 75.6427 29.0625C75.3292 28.9058 75.0895 28.6937 74.9144 28.4079C74.7392 28.1313 74.6562 27.8085 74.6562 27.4489C74.6562 27.0063 74.7761 26.6283 75.0342 26.3056C75.2832 25.9828 75.6427 25.7339 76.1221 25.5495C75.8916 25.3097 75.7257 25.0884 75.6243 24.8763C75.5229 24.6643 75.4675 24.443 75.4675 24.2125C75.4675 23.8344 75.5966 23.5301 75.864 23.2996C76.1313 23.0691 76.4816 22.9492 76.9149 22.9492C77.1731 22.9492 77.4128 23.0045 77.6248 23.106C77.8461 23.2074 78.012 23.3642 78.1319 23.5578C78.2517 23.7514 78.3163 23.9727 78.3163 24.2309H77.9198C77.9198 23.9358 77.8184 23.7053 77.6248 23.5393C77.422 23.3734 77.1823 23.2812 76.9057 23.2812C76.5923 23.2812 76.3434 23.3642 76.1498 23.5393C75.9562 23.7145 75.864 23.9358 75.864 24.2125C75.864 24.4153 75.9193 24.6089 76.0207 24.7934C76.1221 24.9778 76.2973 25.1898 76.5185 25.4204L78.7588 27.7255C78.9247 27.495 79.1091 27.2 79.3119 26.868L79.8005 26.0105H80.2246L79.6254 27.0524C79.4133 27.4213 79.2105 27.7348 79.0169 27.9929L79.0077 28.0022ZM77.6801 28.7214C77.9659 28.5738 78.2517 28.3433 78.5191 28.0206L76.3526 25.8261H76.3249C75.4675 26.1488 75.0342 26.6836 75.0342 27.4397C75.0342 27.7255 75.108 27.9837 75.2463 28.2142C75.3846 28.4448 75.5782 28.62 75.8271 28.749C76.076 28.8781 76.3618 28.9427 76.6752 28.9427C77.0532 28.9427 77.3851 28.8689 77.6709 28.7214H77.6801Z"
+                            fill="white" />
+                        <path d="M85.7187 28.8537H88.0143V29.1857H85.3223V23.0078H85.7187V28.8445V28.8537Z"
+                            fill="white" />
+                        <path
+                            d="M89.7387 23.2581C89.6741 23.1935 89.6465 23.1106 89.6465 23.0091C89.6465 22.9077 89.6741 22.8247 89.7387 22.7602C89.8032 22.6956 89.8862 22.668 89.9784 22.668C90.0706 22.668 90.1535 22.6956 90.2181 22.7602C90.2826 22.8247 90.3195 22.9077 90.3195 23.0091C90.3195 23.1106 90.2826 23.2028 90.2181 23.2581C90.1535 23.3226 90.0706 23.3503 89.9784 23.3503C89.8862 23.3503 89.8032 23.3226 89.7387 23.2581ZM90.172 24.4107V29.187H89.7756V24.4107H90.172Z"
+                            fill="white" />
+                        <path
+                            d="M94.3021 24.7801H93.0667V29.2061H92.6703V24.7801H91.9512V24.4298H92.6703V24.0978C92.6703 23.5999 92.7993 23.2311 93.0483 22.9821C93.2972 22.7424 93.712 22.6133 94.2836 22.6133V22.9637C93.8227 22.9637 93.5092 23.0559 93.334 23.2311C93.1589 23.4063 93.0667 23.6921 93.0667 24.0886V24.4205H94.3021V24.7709V24.7801Z"
+                            fill="white" />
+                        <path
+                            d="M100.451 26.9532H96.33C96.3392 27.3774 96.4314 27.7462 96.6158 28.032C96.791 28.3271 97.0215 28.5484 97.3072 28.6959C97.593 28.8435 97.9065 28.9172 98.2476 28.9172C98.7178 28.9172 99.105 28.7973 99.4277 28.5668C99.7411 28.3363 99.9439 28.0228 100.027 27.6171H100.442C100.35 28.1058 100.11 28.5023 99.7227 28.7973C99.3355 29.1016 98.8469 29.2492 98.2568 29.2492C97.8143 29.2492 97.4087 29.1477 97.0583 28.9541C96.708 28.7512 96.4314 28.4654 96.2286 28.0966C96.0258 27.7277 95.9336 27.2852 95.9336 26.7872C95.9336 26.2893 96.035 25.8559 96.2286 25.4871C96.4222 25.1183 96.6988 24.8324 97.0491 24.6388C97.3994 24.4452 97.8051 24.3438 98.2568 24.3438C98.7086 24.3438 99.1142 24.4452 99.4461 24.6388C99.7872 24.8324 100.036 25.0998 100.211 25.4226C100.386 25.7453 100.479 26.0957 100.479 26.4737C100.479 26.6858 100.479 26.8426 100.46 26.9532H100.451ZM99.8517 25.5517C99.6858 25.2566 99.4553 25.0445 99.1695 24.897C98.8837 24.7495 98.5703 24.6849 98.2384 24.6849C97.9065 24.6849 97.593 24.7587 97.3072 24.897C97.0215 25.0445 96.791 25.2566 96.6158 25.5517C96.4406 25.8467 96.3392 26.2063 96.33 26.6213H100.073C100.091 26.1971 100.018 25.8375 99.8517 25.5517Z"
+                            fill="white" />
+                        <path
+                            d="M102.812 28.9091C102.471 28.6786 102.286 28.3374 102.24 27.904H102.646C102.674 28.2175 102.821 28.4573 103.07 28.6417C103.328 28.8261 103.669 28.9183 104.112 28.9183C104.471 28.9183 104.766 28.8261 104.978 28.6417C105.19 28.4573 105.301 28.2268 105.301 27.9594C105.301 27.7749 105.246 27.6182 105.126 27.4983C105.015 27.3785 104.868 27.2862 104.702 27.2217C104.536 27.1572 104.296 27.0834 104.01 27.0096C103.66 26.9174 103.374 26.8252 103.153 26.733C102.932 26.6408 102.747 26.5025 102.6 26.3273C102.443 26.1429 102.369 25.9031 102.369 25.5989C102.369 25.3776 102.434 25.1655 102.572 24.9811C102.71 24.7967 102.895 24.6399 103.134 24.5293C103.374 24.4186 103.651 24.3633 103.955 24.3633C104.453 24.3633 104.858 24.4924 105.163 24.7413C105.467 24.9903 105.633 25.3315 105.661 25.774H105.264C105.246 25.4605 105.126 25.2024 104.895 24.9995C104.665 24.7967 104.351 24.7044 103.946 24.7044C103.605 24.7044 103.328 24.7967 103.098 24.9718C102.876 25.147 102.766 25.3591 102.766 25.6173C102.766 25.8386 102.83 26.023 102.959 26.1613C103.088 26.2996 103.245 26.4011 103.43 26.4748C103.614 26.5486 103.863 26.6224 104.167 26.7053C104.499 26.7975 104.766 26.8805 104.969 26.9635C105.172 27.0465 105.347 27.1756 105.485 27.3323C105.624 27.4891 105.697 27.7104 105.697 27.9778C105.697 28.2268 105.633 28.4481 105.495 28.6417C105.356 28.8445 105.172 28.9921 104.932 29.1119C104.693 29.2226 104.425 29.2779 104.121 29.2779C103.586 29.2779 103.153 29.158 102.812 28.9275V28.9091Z"
+                            fill="white" />
+                        <path
+                            d="M108.351 24.7692V27.9227C108.351 28.2731 108.416 28.5128 108.545 28.6512C108.674 28.7895 108.904 28.8448 109.227 28.8448H109.762V29.1952H109.163C108.748 29.1952 108.443 29.0937 108.241 28.9001C108.047 28.7065 107.946 28.3745 107.946 27.9227V24.7692H107.227V24.4281H107.946V23.2109H108.342V24.4281H109.762V24.7692H108.342H108.351Z"
+                            fill="white" />
+                        <path
+                            d="M115.394 24.4297L112.619 31.4466H112.213L113.098 29.206L111.098 24.4297H111.531L113.329 28.7634L114.997 24.4297H115.403H115.394Z"
+                            fill="white" />
+                        <path d="M117.535 22.6875V29.1973H117.139V22.6875H117.535Z" fill="white" />
+                        <path
+                            d="M124.135 26.9532H120.014C120.023 27.3774 120.115 27.7462 120.299 28.032C120.475 28.3271 120.705 28.5484 120.991 28.6959C121.277 28.8435 121.59 28.9172 121.931 28.9172C122.401 28.9172 122.789 28.7973 123.111 28.5668C123.425 28.3363 123.628 28.0228 123.71 27.6171H124.125C124.033 28.1058 123.793 28.5023 123.406 28.7973C123.019 29.1016 122.53 29.2492 121.94 29.2492C121.498 29.2492 121.092 29.1477 120.742 28.9541C120.392 28.7512 120.115 28.4654 119.912 28.0966C119.709 27.7277 119.617 27.2852 119.617 26.7872C119.617 26.2893 119.719 25.8559 119.912 25.4871C120.106 25.1183 120.382 24.8324 120.733 24.6388C121.083 24.4452 121.489 24.3438 121.94 24.3438C122.392 24.3438 122.798 24.4452 123.13 24.6388C123.471 24.8324 123.72 25.0998 123.895 25.4226C124.07 25.7453 124.162 26.0957 124.162 26.4737C124.162 26.6858 124.162 26.8426 124.144 26.9532H124.135ZM123.535 25.5517C123.369 25.2566 123.139 25.0445 122.853 24.897C122.567 24.7495 122.254 24.6849 121.922 24.6849C121.59 24.6849 121.277 24.7587 120.991 24.897C120.705 25.0445 120.475 25.2566 120.299 25.5517C120.124 25.8467 120.023 26.2063 120.014 26.6213H123.757C123.775 26.1971 123.701 25.8375 123.535 25.5517Z"
+                            fill="white" />
+                        <path d="M42.3439 18.6046H47.1195V19.2962H41.5234V6.46094H42.3439V18.6046Z" fill="white" />
+                        <path
+                            d="M51.5998 7.15249V12.5097H56.7257V13.2013H51.5998V18.5954H57.2696V19.2869H50.7793V6.46094H57.2696V7.15249H51.5998Z"
+                            fill="white" />
+                        <path
+                            d="M71.2445 6.46094L66.3399 19.3054H65.4272L60.541 6.46094H61.4353L65.8789 18.3372L70.3594 6.46094H71.2352H71.2445Z"
+                            fill="white" />
+                        <path
+                            d="M75.8537 7.15249V12.5097H80.9796V13.2013H75.8537V18.5954H81.5235V19.2869H75.0332V6.46094H81.5235V7.15249H75.8537Z"
+                            fill="white" />
+                        <path d="M86.6232 18.6046H91.3988V19.2962H85.8027V6.46094H86.6232V18.6046Z" fill="white" />
+                        <path
+                            d="M102.754 6.46094V14.4922C102.754 15.9398 103.086 17.0094 103.741 17.6825C104.395 18.3556 105.299 18.6968 106.433 18.6968C107.567 18.6968 108.442 18.3649 109.088 17.6918C109.733 17.0186 110.056 15.9583 110.056 14.4922V6.46094H110.876V14.4737C110.876 16.1427 110.471 17.3875 109.668 18.2081C108.866 19.0288 107.788 19.4345 106.433 19.4345C105.077 19.4345 103.989 19.0195 103.169 18.1989C102.348 17.3782 101.934 16.1335 101.934 14.4737V6.46094H102.754Z"
+                            fill="white" />
+                        <path
+                            d="M122.309 12.7218C121.599 13.3488 120.558 13.6623 119.165 13.6623H116.418V19.2962H115.598V6.46094H119.165C120.576 6.46094 121.636 6.78366 122.328 7.43833C123.019 8.093 123.369 8.96897 123.369 10.0847C123.369 11.2004 123.019 12.104 122.309 12.731V12.7218ZM122.549 10.0755C122.549 9.13494 122.282 8.41573 121.747 7.92703C121.212 7.42911 120.355 7.18937 119.165 7.18937H116.418V12.9339H119.165C121.424 12.9339 122.549 11.9841 122.549 10.0755Z"
+                            fill="white" />
+                        <path
+                            d="M127.694 5.89042C127.63 5.86275 127.575 5.81665 127.538 5.77055C127.501 5.71522 127.482 5.6599 127.482 5.58613H127.658C127.658 5.64146 127.685 5.69678 127.731 5.73366C127.777 5.77055 127.833 5.79821 127.916 5.79821C127.999 5.79821 128.054 5.77977 128.1 5.74288C128.146 5.706 128.165 5.65068 128.165 5.59535C128.165 5.54925 128.155 5.51237 128.128 5.47548C128.1 5.44782 128.072 5.42016 128.026 5.41094C127.989 5.3925 127.934 5.38328 127.87 5.36484C127.787 5.34639 127.722 5.31873 127.676 5.30029C127.63 5.28185 127.584 5.24497 127.547 5.19886C127.51 5.15276 127.492 5.08821 127.492 5.01445C127.492 4.9499 127.51 4.88536 127.547 4.83004C127.584 4.77471 127.63 4.73783 127.694 4.71017C127.759 4.6825 127.833 4.66406 127.907 4.66406C128.026 4.66406 128.119 4.69172 128.192 4.75627C128.266 4.81159 128.312 4.89458 128.321 4.98679H128.146C128.146 4.94068 128.119 4.89458 128.072 4.8577C128.026 4.82081 127.971 4.80237 127.897 4.80237C127.833 4.80237 127.777 4.82081 127.731 4.8577C127.685 4.89458 127.667 4.94068 127.667 5.00523C127.667 5.05133 127.676 5.08821 127.704 5.11588C127.731 5.14354 127.759 5.16198 127.796 5.18042C127.833 5.19886 127.888 5.20808 127.953 5.23575C128.036 5.25419 128.1 5.28185 128.155 5.30029C128.202 5.31873 128.248 5.35562 128.284 5.40172C128.321 5.44782 128.34 5.51237 128.34 5.58613C128.34 5.65068 128.321 5.706 128.294 5.76133C128.266 5.81665 128.211 5.86275 128.146 5.89042C128.082 5.91808 128.008 5.93652 127.925 5.93652C127.842 5.93652 127.768 5.91808 127.704 5.89042H127.694Z"
+                            fill="white" />
+                        <path
+                            d="M129.731 4.6875V5.9323H129.565V5.01022L129.15 5.9323H129.04L128.625 5.001V5.9323H128.459V4.6875H128.634L129.095 5.711L129.556 4.6875H129.731Z"
+                            fill="white" />
+                        <path
+                            d="M128.606 7.02167C127.647 7.02167 126.873 6.24713 126.873 5.28818C126.873 4.32923 127.647 3.55469 128.606 3.55469C129.565 3.55469 130.339 4.32923 130.339 5.28818C130.339 6.24713 129.565 7.02167 128.606 7.02167ZM128.606 3.78521C127.777 3.78521 127.104 4.45832 127.104 5.28818C127.104 6.11804 127.777 6.79115 128.606 6.79115C129.436 6.79115 130.109 6.11804 130.109 5.28818C130.109 4.45832 129.436 3.78521 128.606 3.78521Z"
+                            fill="white" />
+                    </svg>
+                </a>
+                <nav class="header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="/about.html">About Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="/services.html">Services</a></li>
+                        <li class="menu__item"><a class="menu__link" href="/destionations.html">Destinations</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="/blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                <a class="header__btn-login" href="#">AGENT LOGIN</a>
+                <a class="burger-btn" href="#">
+                    <svg class="cross-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect class="line" width="22" height="2" transform="translate(5 10)" fill="#FFF" />
+                        <rect class="line" width="22" height="2" transform="translate(5 21)" fill="#FFF" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="about-main">
+        <div class="container">
+            <div class="about-main__inner">
+                <p class="about-main__text">ABOUT LEVEL UP</p>
+                <h2 class="about-main__title main-title">
+                    We don’t just plan experiences, <span>we craft stories</span> that unfold against the
+                    backdrop of the world’s most stunning landscapes
+                </h2>
+                <p class="about-main__subtitle subtitle-main">
+                    From the golden sands of the UAE to the lush, tropical shores of
+                    Mauritius, we take our clients on a journey that transcends the ordinary and ventures into the realm
+                    of the extraordinary.
+                </p>
+            </div>
+        </div>
+        <img class="about-main__img big" src="images/content/bigPicture.png" alt="">
+        <div class="container">
+            <div class="about-main__content">
+                <div class="about-main__wrapper">
+                    <div class="about-main__content-left">
+                        <p class="about-main__content-text">
+                            As a premier Destination Management Company, our expertise spans
+                            across the United Arab Emirates, Oman, Jordan, Mauritius, and Saudi Arabia, offering bespoke
+                            services that cater to the sophisticated tastes of our discerning clientele.
+                        </p>
+                        <img class="about-main__left-img" src="images/content/swiper-2.png" alt="">
+                    </div>
+                    <img class="about-main__right-img" src="images/home.webp" alt="">
+                </div>
+                <p class="about-main__content-sub subtitle-main">
+                    Every experience we design is a story in itself—a tale of
+                    refinement, comfort, and unparalleled adventure. Our creative team, with their deep local knowledge
+                    and
+                    flair for innovation, works tirelessly to transform your vision into a story worth telling. We don’t
+                    just meet expectations; we elevate them, crafting experiences that are as flawless as they are
+                    unforgettable.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="experience-sec">
+        <div class="container">
+            <div class="experience-sec__inner">
+                <h2 class="experience-sec__title main-title">The Tailor-Made Experience</h2>
+                <p class="experience-sec__subtitle text-main">
+                    Picture this: a seamless journey from concept to
+                    execution, where every detail is meticulously considered, every experience carefully curated, and
+                    every guest treated like a seasoned celebrity
+                </p>
+                <div class="experience-sec__img-wrapper">
+                    <img class="experience-sec__img" src="images/content/exp-image-1.png" alt="">
+                    <img class="experience-sec__img" src="images/content/exp-image-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-choose__inner">
+                <div class="why-choose__left">
+                    <h2 class="why-choose__title main-title">Why Choose Level Up</h2>
+                    <p class="why-choose__subtitle text-main">
+                        At Level Up, we offer a boutique approach that delivers
+                        personalized service, ensuring every experience is intimate, exquisite, and memorable. From the
+                        moment we first speak, we transform your vision into a crafted journey, going “Beyond the
+                        Ordinary.” Whether it’s a corporate event, incentive trip, or grand conference, we promise an
+                        experience as unique as you are.
+                    </p>
+                </div>
+                <div class="why-choose__right">
+                    <img class="why-choose__img" src="images/content/why-choose.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="different">
+        <div class="container">
+            <div class="different__inner">
+                <h2 class="different__title main-title">What Makes Us Different</h2>
+            </div>
+        </div>
+        <div class="different__list">
+            <div class="different__item">
+                <h4 class="different__item-title">Client-Centric Relationships</h4>
+                <p class="different__item-text">
+                    We go beyond transactions to build lasting, personalized
+                    connections with every client, ensuring your unique needs are at the heart of every decision
+                </p>
+            </div>
+            <div class="different__item">
+                <h4 class="different__item-title">Swift Response Time</h4>
+                <p class="different__item-text">
+                    Our team is dedicated to providing rapid, efficient service, ensuring every request is met with
+                    prompt and thoughtful solutions, no matter the complexity
+                </p>
+            </div>
+            <div class="different__item">
+                <h4 class="different__item-title">Innovative Solutions</h4>
+                <p class="different__item-text">
+                    We approach every project with creativity and distinction, offering solutions that elevate your
+                    experience and set new standards for excellence
+                </p>
+            </div>
+            <div class="different__item">
+                <h4 class="different__item-title">24/7 Tailored Support</h4>
+                <p class="different__item-text">
+                    Our round-the-clock availability means we’re always here for you, delivering bespoke itineraries and
+                    ensuring your journey runs smoothly from start to finish
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="card-sec">
+        <div class="container">
+            <div class="card-sec__inner">
+                <div class="card-sec__content">
+                    <h2 class="card-sec__title font-title">Our Motto:</h2>
+                    <p class="card-sec__subtitle small-title">Deliver <span>“Beyond The Ordinary”</span> Experiences</p>
+                    <img class="card-sec__img" src="images/content/card-image-1.png" alt="">
+                </div>
+                <div class="card-sec__content">
+                    <h2 class="card-sec__title font-title">Our Mission:</h2>
+                    <p class="card-sec__subtitle small-title">To Level UP your experience</p>
+                    <img class="card-sec__img" src="images/content/card-image-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="values">
+        <div class="container">
+            <div class="values__inner">
+                <h2 class="values__title main-title">Our Values</h2>
+                <div class="values__list">
+                    <div class="values__item">
+                        <div class="values__content-text">
+                            <h2 class="values__item-title small-title">Passion for Excellence</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="2" viewBox="0 0 82 2"
+                                fill="none">
+                                <path d="M0 1H82" stroke="#D1A246" />
+                            </svg>
+                            <p class="values__item-text subtitle-main">
+                                Our passion for crafting exceptional experiences
+                                drives everything we do. We are dedicated to exceeding expectations and delivering
+                                excellence at every turn
+                            </p>
+                        </div>
+                        <div class="values__img-wrapper">
+                            <img class="values__item-img" src="images/content/values-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="values__item">
+                        <div class="values__content-text">
+                            <h2 class="values__item-title small-title">Integrity and Trust</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="2" viewBox="0 0 82 2"
+                                fill="none">
+                                <path d="M0 1H82" stroke="#D1A246" />
+                            </svg>
+                            <p class="values__item-text subtitle-main">
+                                We believe in transparency, honesty, and building trust with every client. Integrity is
+                                at the heart of all our relationships
+                            </p>
+                        </div>
+                        <div class="values__img-wrapper">
+                            <img class="values__item-img" src="images/content/values-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="values__item">
+                        <div class="values__content-text">
+                            <h2 class="values__item-title small-title">Commitment to Partnership</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="2" viewBox="0 0 82 2"
+                                fill="none">
+                                <path d="M0 1H82" stroke="#D1A246" />
+                            </svg>
+                            <p class="values__item-text subtitle-main">
+                                We believe in building strong, long-lasting relationships with our clients, working
+                                together to create truly extraordinary experiences
+                            </p>
+                        </div>
+                        <div class="values__img-wrapper">
+                            <img class="values__item-img" src="images/content/values-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="values__item">
+                        <div class="values__content-text">
+                            <h2 class="values__item-title small-title">Flexibility and Adaptability</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="2" viewBox="0 0 82 2"
+                                fill="none">
+                                <path d="M0 1H82" stroke="#D1A246" />
+                            </svg>
+                            <p class="values__item-text subtitle-main">
+                                We understand that every event is unique. Our flexible approach ensures that we can
+                                adapt to any need, offering peace of mind and unparalleled quality
+                            </p>
+                        </div>
+                        <div class="values__img-wrapper">
+                            <img class="values__item-img" src="images/content/values-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="values__item">
+                        <div class="values__content-text">
+                            <h2 class="values__item-title small-title">Collaborative Spirit</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="2" viewBox="0 0 82 2"
+                                fill="none">
+                                <path d="M0 1H82" stroke="#D1A246" />
+                            </svg>
+                            <p class="values__item-text subtitle-main">
+                                We believe in the power of teamwork. By working closely with our clients, we ensure that
+                                every project is a success
+                            </p>
+                        </div>
+                        <div class="values__img-wrapper">
+                            <img class="values__item-img" src="images/content/values-5.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class="team__inner">
+                <p class="team__text page-title">MEET THE TEAM</p>
+                <div class="team__list-wrapper swiper-container">
+                    <div class="team__list swiper-wrapper">
+                        <div class="team__item swiper-slide">
+                            <a class="team-link" href="#">
+                                <img class="team__img" src="images/content/team-1.png" alt="">
+                            </a>
+                            <a class="team-link" href="#">
+                                <h2 class="team__name">Khalaf Khalaf</h2>
+                            </a>
+                            <a class="team-link" href="#">
+                                <p class="team__position">Managing Director</p>
+                            </a>
+                        </div>
+                        <div class="team__item swiper-slide">
+                            <a class="team-link" href="#">
+                                <img class="team__img" src="images/content/team-2.png" alt="">
+                            </a>
+                            <a class="team-link" href="#">
+                                <h2 class="team__name">Khalaf Khalaf</h2>
+                            </a>
+                            <a class="team-link" href="#">
+                                <p class="team__position">Managing Director</p>
+                            </a>
+                        </div>
+                        <div class="team__item swiper-slide">
+                            <a class="team-link" href="#">
+                                <img class="team__img" src="images/content/team-3.png" alt="">
+                            </a>
+                            <a class="team-link" href="#">
+                                <h2 class="team__name">Khalaf Khalaf</h2>
+                            </a>
+                            <a class="team-link" href="#">
+                                <p class="team__position">Managing Director</p>
+                            </a>
+                        </div>
+                        <div class="team__item swiper-slide">
+                            <a class="team-link" href="#">
+                                <img class="team__img" src="images/content/team-4.png" alt="">
+                            </a>
+                            <a class="team-link" href="#">
+                                <h2 class="team__name">Khalaf Khalaf</h2>
+                            </a>
+                            <a class="team-link" href="#">
+                                <p class="team__position">Managing Director</p>
+                            </a>
+                        </div>
+                        <div class="team__item swiper-slide">
+                            <a class="team-link" href="#">
+                                <img class="team__img" src="images/content/team-5.png" alt="">
+                            </a>
+                            <a class="team-link" href="#">
+                                <h2 class="team__name">Khalaf Khalaf</h2>
+                            </a>
+                            <a class="team-link" href="#">
+                                <p class="team__position">Managing Director</p>
+                            </a>
+                        </div>
+                        <div class="team__item swiper-slide">
+                            <a class="team-link" href="#">
+                                <img class="team__img" src="images/content/team-6.png" alt="">
+                            </a>
+                            <a class="team-link" href="#">
+                                <h2 class="team__name">Khalaf Khalaf</h2>
+                            </a>
+                            <a class="team-link" href="#">
+                                <p class="team__position">Managing Director</p>
+                            </a>
+                        </div>
+                        <div class="team__item swiper-slide">
+                            <a class="team-link" href="#">
+                                <img class="team__img" src="images/content/team-7.png" alt="">
+                            </a>
+                            <a class="team-link" href="#">
+                                <h2 class="team__name">Khalaf Khalaf</h2>
+                            </a>
+                            <a class="team-link" href="#">
+                                <p class="team__position">Managing Director</p>
+                            </a>
+                        </div>
+                        <div class="team__item swiper-slide">
+                            <a class="team-link" href="#">
+                                <img class="team__img" src="images/content/team-8.png" alt="">
+                            </a>
+                            <a class="team-link" href="#">
+                                <h2 class="team__name">Khalaf Khalaf</h2>
+                            </a>
+                            <a class="team-link" href="#">
+                                <p class="team__position">Managing Director</p>
+                            </a>
+                        </div>
+                        <div class="team__item swiper-slide">
+                            <a class="team-link" href="#">
+                                <img class="team__img" src="images/content/team-9.png" alt="">
+                            </a>
+                            <a class="team-link" href="#">
+                                <h2 class="team__name">Khalaf Khalaf</h2>
+                            </a>
+                            <a class="team-link" href="#">
+                                <p class="team__position">Managing Director</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <p class="partners__text page-title">OUR PARTNERS</p>
+            <div class="partners__inner swiper-container">
+                <div class="swiper-wrapper">
+                    <a class="partners__link swiper-slide" href="#">
+                        <img class="partners__img" src="images/content/parterns-1.png" alt="">
+                    </a>
+                    <a class="partners__link swiper-slide" href="#">
+                        <img class="partners__img" src="images/content/parterns-2.png" alt="">
+                    </a>
+                    <a class="partners__link swiper-slide" href="#">
+                        <img class="partners__img" src="images/content/parterns-3.png" alt="">
+                    </a>
+                    <a class="partners__link swiper-slide" href="#">
+                        <img class="partners__img" src="images/content/parterns-4.png" alt="">
+                    </a>
+                    <a class="partners__link swiper-slide" href="#">
+                        <img class="partners__img" src="images/content/parterns-5.png" alt="">
+                    </a>
+                    <a class="partners__link swiper-slide" href="#">
+                        <img class="partners__img" src="images/content/parterns-6.png" alt="">
+                    </a>
+                    <a class="partners__link swiper-slide" href="#">
+                        <img class="partners__img" src="images/content/parterns-7.png" alt="">
+                    </a>
+                    <a class="partners__link swiper-slide" href="#">
+                        <img class="partners__img" src="images/content/parterns-8.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="container">
+            <div class="contact-us__inner">
+                <h5 class="contact-us__title">Contact us</h5>
+                <div class="contact-us__wrapper">
+                    <div class="contact-us__box">
+                        <h6 class="contact-us__box-title">Get in touch</h6>
+                        <div class="contact-us__info-list">
+                            <div class="contact-us__info-item">
+                                <p class="contact-us__info-text">Address</p>
+                                <p class="contact-us__info-title">
+                                    Lake Central Tower, Office #1008, Marasi Drive Business Bay, Dubai, UAE
+                                </p>
+                            </div>
+                            <div class="contact-us__info-item">
+                                <p class="contact-us__info-text">Phone</p>
+                                <p class="contact-us__info-title">
+                                    +971 4 557 4459
+                                </p>
+                            </div>
+                            <div class="contact-us__info-item">
+                                <p class="contact-us__info-text">Mail</p>
+                                <p class="contact-us__info-title">
+                                    info@levelup-dmc.com
+                                </p>
+                            </div>
+                        </div>
+                        <img class="contact-us__map" src="images/content/map-contact.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content-left">
+                    <a class="footer__logo" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="207" height="51" viewBox="0 0 207 51"
+                            fill="none">
+                            <g clip-path="url(#clip0_77_5335)">
+                                <path
+                                    d="M31.7615 37.1753C30.1705 36.2892 28.6537 35.2528 27.1222 34.2766C26.111 33.6307 25.0999 33.06 24.0293 32.6094C24.0293 33.5556 24.0293 34.5169 24.059 35.4631C24.059 36.6647 24.401 37.8062 24.9215 38.8876C26.111 41.3959 28.4753 42.3571 30.9288 42.1318C33.2931 41.9065 34.7354 40.5548 35.4789 38.3168C35.4938 38.2718 35.5086 38.2117 35.5235 38.1666C34.2299 38.1666 32.9659 37.8362 31.7912 37.1753H31.7615Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M24.9958 0C11.1968 0 0 11.3098 0 25.248C0 39.1862 11.1968 50.496 24.9958 50.496C38.7948 50.496 49.9917 39.1862 49.9917 25.248C49.9917 11.3098 38.7948 0 24.9958 0ZM42.2446 35.3862C40.7576 36.5578 39.1815 37.5791 37.293 37.9846C36.8321 38.0898 36.3711 38.1348 35.925 38.1649C35.3302 40.7332 33.7243 42.3854 31.1073 42.9862C29.085 43.4518 27.0776 43.3767 25.1148 42.8059C22.6018 42.0549 21.1149 40.2826 20.5201 37.7293C20.1781 36.3024 20.1632 34.8305 20.1632 33.3736C20.1632 32.8028 20.1632 32.2321 20.1632 31.6463C17.8584 31.376 15.8361 31.4361 15.0629 31.406C14.0072 31.361 12.3269 31.406 12.3269 31.406C12.3269 31.406 12.3715 27.2155 12.3715 26.5096C12.3715 21.7784 12.3715 17.0623 12.3715 12.3311C12.3715 11.6552 12.3715 8.20071 12.3715 8.20071H16.0741C16.0741 8.20071 16.0741 11.4299 16.0741 11.6402C16.0741 17.9184 16.0741 24.1966 16.0741 30.4748C16.0741 30.5799 16.0741 30.9254 16.0741 30.9254C16.0741 30.9254 17.2042 31.0305 18.929 31.1207C19.3454 31.1507 19.7617 31.1957 20.1632 31.2408C20.1632 28.8977 20.1632 26.5547 20.1632 24.2116C20.1632 23.8662 20.1632 19.7808 20.1632 19.7808H23.9847C23.9847 19.7808 23.9847 23.701 23.9847 24.482C23.9847 26.9752 23.9996 29.4835 24.0144 31.9768C25.204 32.2922 26.3192 32.6677 27.3006 33.0732C29.1593 33.8542 30.9883 34.6953 32.8916 35.3412C33.8879 35.6716 34.8841 35.9269 35.8953 36.0471C35.925 35.7317 35.9399 35.4163 35.9399 35.0858C35.9399 31.6013 35.9399 28.1017 35.9399 24.6172C35.9399 23.9563 35.9399 19.7658 35.9399 19.7658H36.3562C36.3562 19.7658 36.3711 22.1239 36.3562 23.8812C36.3265 27.3808 36.3711 30.8803 36.3265 34.3949C36.3265 34.9507 36.2967 35.5214 36.2521 36.0771C37.6796 36.2273 39.122 36.1372 40.5792 35.7467C41.0699 35.6115 41.5309 35.4163 41.9918 35.236C42.1108 35.191 42.2297 35.1459 42.3933 35.1759C42.3487 35.236 42.3189 35.3111 42.2595 35.3562L42.2446 35.3862Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M68.6087 34.2422V34.7829H65.7686V44.2903H65.1292V34.7829H62.2891V34.2422H68.5938H68.6087Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M73.174 36.8139C73.6498 36.5135 74.2743 36.3633 75.0178 36.3633V37.0392H74.8096C74.0513 37.0392 73.4268 37.2494 72.9212 37.685C72.4156 38.1206 72.1628 38.8265 72.1628 39.8178V44.3087H71.5234V36.5285H72.1628V38.1356C72.3561 37.5649 72.6833 37.1293 73.174 36.8289V36.8139Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M77.9477 38.2993C78.26 37.6985 78.7061 37.2329 79.2711 36.9025C79.8362 36.5721 80.4756 36.4219 81.1893 36.4219C82.0071 36.4219 82.6911 36.6171 83.2562 37.0227C83.8212 37.4282 84.2227 37.9389 84.4458 38.5547V36.527H85.0851V44.3072H84.4458V42.2645C84.2227 42.8953 83.8212 43.406 83.2413 43.8115C82.6763 44.2171 81.9774 44.4273 81.1744 44.4273C80.4607 44.4273 79.8213 44.2621 79.2563 43.9317C78.6912 43.6013 78.26 43.1356 77.9329 42.5349C77.6206 41.9341 77.457 41.2282 77.457 40.4171C77.457 39.606 77.6206 38.9151 77.9329 38.3143L77.9477 38.2993ZM84.0294 38.6147C83.7469 38.0891 83.3751 37.6985 82.8844 37.4132C82.4086 37.1278 81.8584 36.9926 81.2637 36.9926C80.6689 36.9926 80.089 37.1278 79.6131 37.3981C79.1373 37.6685 78.7656 38.059 78.5128 38.5847C78.2451 39.0954 78.1113 39.7112 78.1113 40.4171C78.1113 41.123 78.2451 41.7388 78.5128 42.2495C78.7804 42.7602 79.1522 43.1657 79.628 43.436C80.1038 43.7064 80.654 43.8566 81.2637 43.8566C81.8733 43.8566 82.3937 43.7214 82.8844 43.436C83.3751 43.1507 83.7469 42.7602 84.0294 42.2345C84.2971 41.7088 84.4458 41.108 84.4458 40.4171C84.4458 39.7262 84.3119 39.1404 84.0294 38.6147Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M91.4179 43.6016L94.258 36.5273H94.942L91.745 44.3075H91.0759L87.8789 36.5273H88.5778L91.4179 43.6016Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M104.638 40.6568H97.991C98.0058 41.3477 98.1545 41.9485 98.4519 42.4141C98.7344 42.8947 99.1062 43.2552 99.5671 43.4955C100.028 43.7358 100.534 43.856 101.084 43.856C101.842 43.856 102.467 43.6607 102.987 43.2852C103.493 42.9097 103.82 42.3991 103.954 41.7382H104.623C104.474 42.5343 104.088 43.1801 103.463 43.6607C102.838 44.1564 102.05 44.3967 101.099 44.3967C100.385 44.3967 99.7307 44.2315 99.1657 43.9161C98.6006 43.5856 98.1545 43.12 97.8274 42.5192C97.5003 41.9185 97.3516 41.1975 97.3516 40.3864C97.3516 39.5754 97.5151 38.8695 97.8274 38.2687C98.1397 37.6679 98.5857 37.2023 99.1508 36.8869C99.7158 36.5715 100.37 36.4062 101.099 36.4062C101.827 36.4062 102.482 36.5715 103.017 36.8869C103.567 37.2023 103.969 37.6379 104.251 38.1635C104.534 38.6892 104.682 39.26 104.682 39.8758C104.682 40.2212 104.682 40.4766 104.653 40.6568H104.638ZM103.671 38.3738C103.403 37.8932 103.032 37.5477 102.571 37.3074C102.11 37.0671 101.604 36.962 101.069 36.962C100.534 36.962 100.028 37.0821 99.5671 37.3074C99.1062 37.5477 98.7344 37.8932 98.4519 38.3738C98.1694 38.8544 98.0058 39.4402 97.991 40.1161H104.028C104.058 39.4252 103.939 38.8394 103.671 38.3738Z"
+                                    fill="#F9F5F1" />
+                                <path d="M108.624 33.7031V44.307H107.984V33.7031H108.624Z" fill="#F9F5F1" />
+                                <path
+                                    d="M124.206 42.3558L126.08 44.3083H125.277L123.849 42.8364C123.373 43.4071 122.853 43.8127 122.318 44.068C121.767 44.3233 121.158 44.4585 120.474 44.4585C119.834 44.4585 119.269 44.3383 118.779 44.083C118.273 43.8277 117.886 43.4822 117.604 43.0166C117.321 42.566 117.188 42.0403 117.188 41.4546C117.188 40.7336 117.381 40.1178 117.797 39.5921C118.199 39.0665 118.779 38.6609 119.552 38.3605C119.18 37.97 118.912 37.6096 118.749 37.2641C118.585 36.9186 118.496 36.5582 118.496 36.1827C118.496 35.5669 118.704 35.0712 119.135 34.6957C119.567 34.3203 120.132 34.125 120.831 34.125C121.247 34.125 121.634 34.2151 121.976 34.3803C122.332 34.5455 122.6 34.8009 122.793 35.1163C122.987 35.4317 123.091 35.7922 123.091 36.2127H122.451C122.451 35.7321 122.288 35.3566 121.976 35.0863C121.648 34.8159 121.262 34.6657 120.816 34.6657C120.31 34.6657 119.909 34.8009 119.596 35.0863C119.284 35.3716 119.135 35.7321 119.135 36.1827C119.135 36.5131 119.225 36.8285 119.388 37.1289C119.552 37.4293 119.834 37.7748 120.191 38.1503L123.804 41.9052C124.072 41.5297 124.37 41.049 124.697 40.5083L125.485 39.1115H126.169L125.202 40.8087C124.86 41.4095 124.533 41.9202 124.221 42.3407L124.206 42.3558ZM122.065 43.5273C122.526 43.287 122.987 42.9115 123.418 42.3858L119.924 38.8111H119.879C118.496 39.3368 117.797 40.2079 117.797 41.4396C117.797 41.9052 117.916 42.3257 118.139 42.7012C118.362 43.0767 118.674 43.3621 119.076 43.5723C119.477 43.7826 119.938 43.8878 120.444 43.8878C121.054 43.8878 121.589 43.7676 122.05 43.5273H122.065Z"
+                                    fill="#F9F5F1" />
+                                <path d="M135.03 43.7529H138.733V44.2936H134.391V34.2305H135.03V43.7379V43.7529Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M141.514 34.6331C141.41 34.528 141.365 34.3928 141.365 34.2276C141.365 34.0624 141.41 33.9272 141.514 33.8221C141.618 33.7169 141.752 33.6719 141.901 33.6719C142.049 33.6719 142.183 33.7169 142.287 33.8221C142.391 33.9272 142.451 34.0624 142.451 34.2276C142.451 34.3928 142.391 34.543 142.287 34.6331C142.183 34.7383 142.049 34.7833 141.901 34.7833C141.752 34.7833 141.618 34.7383 141.514 34.6331ZM142.213 36.5106V44.2907H141.573V36.5106H142.213Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M148.874 37.0999H146.881V44.3093H146.242V37.0999H145.082V36.5292H146.242V35.9885C146.242 35.1774 146.45 34.5766 146.852 34.1711C147.253 33.7806 147.922 33.5703 148.844 33.5703V34.1411C148.101 34.1411 147.595 34.2913 147.312 34.5766C147.03 34.862 146.881 35.3276 146.881 35.9735V36.5142H148.874V37.0849V37.0999Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M158.794 40.6568H152.147C152.162 41.3477 152.311 41.9485 152.608 42.4141C152.891 42.8947 153.262 43.2552 153.723 43.4955C154.184 43.7358 154.69 43.856 155.24 43.856C155.998 43.856 156.623 43.6607 157.143 43.2852C157.649 42.9097 157.976 42.3991 158.11 41.7382H158.779C158.63 42.5343 158.244 43.1801 157.619 43.6607C156.995 44.1564 156.207 44.3967 155.255 44.3967C154.541 44.3967 153.887 44.2315 153.322 43.9161C152.757 43.5856 152.311 43.12 151.984 42.5192C151.657 41.9185 151.508 41.1975 151.508 40.3864C151.508 39.5754 151.671 38.8695 151.984 38.2687C152.296 37.6679 152.742 37.2023 153.307 36.8869C153.872 36.5715 154.526 36.4062 155.255 36.4062C155.984 36.4062 156.638 36.5715 157.173 36.8869C157.723 37.2023 158.125 37.6379 158.407 38.1635C158.69 38.6892 158.839 39.26 158.839 39.8758C158.839 40.2212 158.839 40.4766 158.809 40.6568H158.794ZM157.827 38.3738C157.56 37.8932 157.188 37.5477 156.727 37.3074C156.266 37.0671 155.761 36.962 155.225 36.962C154.69 36.962 154.184 37.0821 153.723 37.3074C153.262 37.5477 152.891 37.8932 152.608 38.3738C152.326 38.8544 152.162 39.4402 152.147 40.1161H158.184C158.214 39.4252 158.095 38.8394 157.827 38.3738Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M162.6 43.8422C162.049 43.4667 161.752 42.911 161.678 42.205H162.332C162.377 42.7157 162.615 43.1062 163.016 43.4066C163.432 43.707 163.983 43.8572 164.696 43.8572C165.276 43.8572 165.752 43.707 166.094 43.4066C166.436 43.1062 166.614 42.7307 166.614 42.2952C166.614 41.9948 166.525 41.7394 166.332 41.5442C166.153 41.3489 165.916 41.1987 165.648 41.0936C165.38 40.9884 164.994 40.8683 164.533 40.7481C163.968 40.5979 163.507 40.4477 163.15 40.2975C162.793 40.1473 162.496 39.9221 162.258 39.6367C162.005 39.3363 161.886 38.9458 161.886 38.4501C161.886 38.0897 161.99 37.7442 162.213 37.4438C162.436 37.1434 162.733 36.8881 163.12 36.7079C163.507 36.5276 163.953 36.4375 164.443 36.4375C165.246 36.4375 165.901 36.6478 166.391 37.0533C166.882 37.4588 167.15 38.0146 167.194 38.7355H166.555C166.525 38.2248 166.332 37.8043 165.96 37.4739C165.588 37.1434 165.083 36.9932 164.429 36.9932C163.878 36.9932 163.432 37.1434 163.061 37.4288C162.704 37.7142 162.525 38.0596 162.525 38.4802C162.525 38.8406 162.629 39.141 162.838 39.3663C163.046 39.5916 163.299 39.7568 163.596 39.877C163.893 39.9971 164.295 40.1173 164.785 40.2525C165.321 40.4027 165.752 40.5379 166.079 40.673C166.406 40.8082 166.689 41.0185 166.912 41.2738C167.135 41.5292 167.254 41.8896 167.254 42.3252C167.254 42.7307 167.15 43.0912 166.927 43.4066C166.704 43.737 166.406 43.9774 166.02 44.1726C165.633 44.3528 165.202 44.443 164.711 44.443C163.849 44.443 163.15 44.2477 162.6 43.8722V43.8422Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M171.537 37.0852V42.2219C171.537 42.7926 171.641 43.1832 171.849 43.4085C172.057 43.6337 172.429 43.7239 172.949 43.7239H173.812V44.2946H172.845C172.176 44.2946 171.685 44.1294 171.358 43.814C171.046 43.4986 170.882 42.9579 170.882 42.2219V37.0852H169.723V36.5295H170.882V34.5469H171.522V36.5295H173.812V37.0852H171.522H171.537Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M182.896 36.5273L178.42 47.9573H177.766L179.194 44.3075L175.967 36.5273H176.666L179.565 43.5866L182.257 36.5273H182.911H182.896Z"
+                                    fill="#F9F5F1" />
+                                <path d="M186.346 33.7031V44.307H185.707V33.7031H186.346Z" fill="#F9F5F1" />
+                                <path
+                                    d="M196.993 40.6568H190.346C190.361 41.3477 190.51 41.9485 190.807 42.4141C191.09 42.8947 191.462 43.2552 191.923 43.4955C192.384 43.7358 192.889 43.856 193.439 43.856C194.198 43.856 194.822 43.6607 195.343 43.2852C195.848 42.9097 196.175 42.3991 196.309 41.7382H196.978C196.83 42.5343 196.443 43.1801 195.818 43.6607C195.194 44.1564 194.406 44.3967 193.454 44.3967C192.74 44.3967 192.086 44.2315 191.521 43.9161C190.956 43.5856 190.51 43.12 190.183 42.5192C189.856 41.9185 189.707 41.1975 189.707 40.3864C189.707 39.5754 189.871 38.8695 190.183 38.2687C190.495 37.6679 190.941 37.2023 191.506 36.8869C192.071 36.5715 192.726 36.4062 193.454 36.4062C194.183 36.4062 194.837 36.5715 195.372 36.8869C195.923 37.2023 196.324 37.6379 196.607 38.1635C196.889 38.6892 197.038 39.26 197.038 39.8758C197.038 40.2212 197.038 40.4766 197.008 40.6568H196.993ZM196.027 38.3738C195.759 37.8932 195.387 37.5477 194.926 37.3074C194.465 37.0671 193.96 36.962 193.424 36.962C192.889 36.962 192.384 37.0821 191.923 37.3074C191.462 37.5477 191.09 37.8932 190.807 38.3738C190.525 38.8544 190.361 39.4402 190.346 40.1161H196.383C196.413 39.4252 196.294 38.8394 196.027 38.3738Z"
+                                    fill="#F9F5F1" />
+                                <path d="M65.0695 27.0504H72.772V28.1768H63.7461V7.26953H65.0695V27.0504Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M79.9992 8.396V17.1224H88.2667V18.2489H79.9992V27.0354H89.144V28.1618H78.6758V7.26953H89.144V8.396H79.9992Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M111.686 7.26953L103.775 28.1919H102.303L94.4221 7.26953H95.8645L103.032 26.6148L110.258 7.26953H111.671H111.686Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M119.12 8.396V17.1224H127.388V18.2489H119.12V27.0354H128.265V28.1618H117.797V7.26953H128.265V8.396H119.12Z"
+                                    fill="#F9F5F1" />
+                                <path d="M136.487 27.0504H144.19V28.1768H135.164V7.26953H136.487V27.0504Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M162.511 7.26953V20.3516C162.511 22.7097 163.046 24.452 164.102 25.5484C165.158 26.6448 166.615 27.2006 168.444 27.2006C170.273 27.2006 171.685 26.6599 172.726 25.5634C173.767 24.467 174.288 22.7397 174.288 20.3516V7.26953H175.611V20.3216C175.611 23.0401 174.957 25.0678 173.663 26.4045C172.369 27.7413 170.63 28.4021 168.444 28.4021C166.258 28.4021 164.503 27.7263 163.18 26.3895C161.857 25.0528 161.188 23.0251 161.188 20.3216V7.26953H162.511Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M194.048 17.4679C192.903 18.4892 191.223 18.9999 188.977 18.9999H184.546V28.1768H183.223V7.26953H188.977C191.252 7.26953 192.962 7.79522 194.077 8.86161C195.193 9.928 195.758 11.3549 195.758 13.1722C195.758 14.9896 195.193 16.4615 194.048 17.4829V17.4679ZM194.434 13.1572C194.434 11.6252 194.003 10.4537 193.141 9.65765C192.278 8.84659 190.895 8.45608 188.977 8.45608H184.546V17.8133H188.977C192.62 17.8133 194.434 16.2663 194.434 13.1572Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M202.733 6.33745C202.629 6.29239 202.539 6.2173 202.48 6.1422C202.42 6.05208 202.391 5.96196 202.391 5.84181H202.673C202.673 5.93192 202.718 6.02204 202.792 6.08212C202.866 6.1422 202.956 6.18726 203.089 6.18726C203.223 6.18726 203.313 6.15722 203.387 6.09714C203.461 6.03706 203.491 5.94694 203.491 5.85683C203.491 5.78173 203.476 5.72165 203.431 5.66157C203.387 5.61651 203.342 5.57145 203.268 5.55643C203.208 5.52639 203.119 5.51137 203.015 5.48134C202.881 5.4513 202.777 5.40624 202.703 5.3762C202.629 5.34616 202.554 5.28608 202.495 5.21098C202.435 5.13588 202.405 5.03075 202.405 4.91059C202.405 4.80545 202.435 4.70031 202.495 4.6102C202.554 4.52008 202.629 4.46 202.733 4.41494C202.837 4.36988 202.956 4.33984 203.075 4.33984C203.268 4.33984 203.417 4.3849 203.536 4.49004C203.655 4.58016 203.729 4.71533 203.744 4.86553H203.461C203.461 4.79043 203.417 4.71533 203.342 4.65526C203.268 4.59518 203.179 4.56514 203.06 4.56514C202.956 4.56514 202.866 4.59518 202.792 4.65526C202.718 4.71533 202.688 4.79043 202.688 4.89557C202.688 4.97067 202.703 5.03075 202.748 5.07581C202.792 5.12086 202.837 5.1509 202.896 5.18094C202.956 5.21098 203.045 5.226 203.149 5.27106C203.283 5.3011 203.387 5.34616 203.476 5.3762C203.55 5.40624 203.625 5.46632 203.684 5.54141C203.744 5.61651 203.773 5.72165 203.773 5.84181C203.773 5.94694 203.744 6.03706 203.699 6.12718C203.655 6.2173 203.565 6.29239 203.461 6.33745C203.357 6.38251 203.238 6.41255 203.104 6.41255C202.971 6.41255 202.852 6.38251 202.748 6.33745H202.733Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M206.019 4.37109V6.39874H205.751V4.89678L205.082 6.39874H204.904L204.234 4.88176V6.39874H203.967V4.37109H204.249L204.993 6.03827L205.736 4.37109H206.019Z"
+                                    fill="#F9F5F1" />
+                                <path
+                                    d="M204.206 8.18644C202.659 8.18644 201.41 6.92479 201.41 5.36275C201.41 3.80071 202.659 2.53906 204.206 2.53906C205.752 2.53906 207.001 3.80071 207.001 5.36275C207.001 6.92479 205.752 8.18644 204.206 8.18644ZM204.206 2.91455C202.867 2.91455 201.782 4.01099 201.782 5.36275C201.782 6.71452 202.867 7.81095 204.206 7.81095C205.544 7.81095 206.629 6.71452 206.629 5.36275C206.629 4.01099 205.544 2.91455 204.206 2.91455Z"
+                                    fill="#F9F5F1" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_77_5335">
+                                    <rect width="207" height="50.496" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="footer__book-link" href="#">
+                        BOOK NOW
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+                            <rect x="0.25" y="0.746094" width="33.5" height="33.5" rx="16.75" stroke="#F9F5F1"
+                                stroke-opacity="0.6" stroke-width="0.5" />
+                            <path
+                                d="M14.8714 12.7614C17.6166 15.7546 20.473 13.4027 20.473 13.4027C20.473 13.4027 18.4823 16.7631 21.0464 19.3271"
+                                stroke="#F9F5F1" stroke-opacity="0.8" stroke-width="0.5" />
+                            <path d="M13.4648 20.5352L20.1537 13.8463" stroke="#F9F5F1" stroke-opacity="0.8"
+                                stroke-width="0.75" />
+                        </svg>
+                    </a>
+                    <div class="footer__social-links">
+                        <a class="social-link" href="#"><img src="images/facebook.png" alt=""></a>
+                        <a class="social-link" href="#"><img src="images/instagram.png" alt=""></a>
+                        <a class="social-link" href="#"><img src="images/In.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer__content-right">
+                    <div class="footer__nav">
+                        <h5 class="footer__nav-title">EXPLORE</h5>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Home</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Destinations</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav">
+                        <h5 class="footer__nav-title">COMPANY</h5>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">About</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav">
+                        <h5 class="footer__nav-title">CONTACT</h5>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">T | +263 83 284 3368</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">T | +263 78 284 5762</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">E| levelup@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav">
+                        <h5 class="footer__nav-title">FOLLOW OUR JOURNEY</h5>
+                        <p class="footer__nav-text">Be a part of our story and join us on our
+                            latest news, VIP events and exclusive offer</p>
+                        <form action="">
+                            <input class="footer__input" type="email" placeholder="Enter email address*">
+                            <button class="footer__button" type="submit">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">Developed by ART FACTORY </p>
+                    <p class="footer__copyright-text">Copyright © 2024 LEVEL UP All Rights Reserved</p>
+                </div>
+                <div class="footer__copyright-links">
+                    <a class="copyright-link" href="">Privacy Policy</a>
+                    <a class="copyright-link" href="">Terms of Use</a>
+                </div>
+                <div class="footer__payments">
+                    <a class="footer__payments-link" href="#">
+                        <img class="footer__payments-img" src="images/icons/pay-1.svg" alt="">
+                    </a>
+                    <a class="footer__payments-link" href="#">
+                        <img class="footer__payments-img" src="images/icons/pay-2.svg" alt="">
+                    </a>
+                    <a class="footer__payments-link" href="#">
+                        <img class="footer__payments-img" src="images/icons/pay-3.svg" alt="">
+                    </a>
+                    <a class="footer__payments-link" href="#">
+                        <img class="footer__payments-img" src="images/icons/pay-4.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/ScrollSmoother.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

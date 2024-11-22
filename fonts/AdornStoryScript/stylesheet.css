@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Adorn Story Serif';
+    src: url('AdornStorySerif.woff2') format('woff2'),
+        url('AdornStorySerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdornStoryScript';
+    src: url('AdornStoryScript.woff2') format('woff2'),
+        url('AdornStoryScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
